@@ -25,9 +25,9 @@ export default new VueRouter({
   scrollBehavior: () => ({ y: 0 }),
 
   routes: [
-    { path: '/', component: load('Home') },
-    { path: '/schedule', component: load('schedule') },
-    { path: '/', component: load('') },
+    { path: '/', component: load('Schedule') },
+    { path: '/AppointmentSet', component: load('AppointmentSet') },
+    { path: '/Days', component: load('Days') },
     // Always leave this last one
     { path: '*', component: load('Error404') } // Not found
   ]
